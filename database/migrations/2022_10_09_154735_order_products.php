@@ -23,7 +23,6 @@ return new class extends Migration
 
             $table->foreign('order_id')->references('id')->on('order');
             $table->foreign('product_id')->references('id')->on('products');
-            $table->foreign('price')->references('price')->on('products');
         });
     }
 
