@@ -13,7 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('order', function (Blueprint $table) {
+            $table->id();
+            $table->unsignedBigInteger('user_id');
+            $table->integer('status');
+            $table->timestamps();
+
+            $table->foreign('owner_id')->references('id')->on('users');
+        });
     }
 
     /**
