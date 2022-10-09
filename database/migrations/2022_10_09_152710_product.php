@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('category');
             $table->integer('count');
-            $table->integer('price');
+            $table->string('price');
             $table->integer('limit');
 
 

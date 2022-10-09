@@ -19,7 +19,7 @@ return new class extends Migration
             $table->integer('status');
             $table->timestamps();
 
-            $table->foreign('owner_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 
