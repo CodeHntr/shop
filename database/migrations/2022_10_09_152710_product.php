@@ -13,7 +13,17 @@ return new class extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('products', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->string('category');
+            $table->integer('count');
+            $table->integer('price');
+            $table->integer('limit');
+
+
+            //$table->foreign('owner_id')->references('id')->on('users');
+        });
     }
 
     /**
