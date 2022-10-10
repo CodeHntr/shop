@@ -17,7 +17,7 @@ class OrderFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'status' => rand(1, 8),
         ];
     }
 }
