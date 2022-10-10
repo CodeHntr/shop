@@ -18,6 +18,7 @@ class ProductsTableSeeder extends Seeder
     public function run()
     {
 
+        factory(App\Product::class, 3)->create();
 //        DB::table('products')->insert([
 //            'name' => str_random(10),
 //            'category' => str_random(5),
