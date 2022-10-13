@@ -46,4 +46,9 @@ class User extends Authenticatable
     {
         return $this->hasOne(Order::class);
     }
+
+    public function orderProduct()
+    {
+        return $this->hasOne(OrderProduct::class);
+    }
 }

@@ -20,4 +20,9 @@ class Product extends Model
     protected $hidden = [
 
     ];
+
+    public function orderProduct()
+    {
+        return $this->hasOne(OrderProduct::class);
+    }
 }
