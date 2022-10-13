@@ -6,7 +6,7 @@ use App\Models\OrderProduct;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class OrderProductTable extends Seeder
+class OrderProductTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.

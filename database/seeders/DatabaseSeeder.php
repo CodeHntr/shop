@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\OrderProduct;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -16,6 +17,8 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(UserTableSeeder::class);
         $this->call(ProductTableSeeder::class);
+        $this->call(OrderTableSeeder::class);
+        $this->call(OrderProductTableSeeder::class);
 
         // \App\Models\User::factory(10)->create();
 
