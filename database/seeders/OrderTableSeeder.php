@@ -13,7 +13,7 @@ class OrderTableSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
+    public function run(): void
     {
         Order::factory()->count(5)->create();
     }
