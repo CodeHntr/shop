@@ -14,10 +14,12 @@ class OrderProductFactory extends Factory
      *
      * @return array<string, mixed>
      */
-    public function definition()
+    public function definition(): array
     {
         return [
-            //
+            'count' => rand(1, 15),
+            'price' => '' . rand(10, 1000) . '',
+            'summa' => rand(1000, 50000)
         ];
     }
 }
